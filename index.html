@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/logo.png" />
+    <title>NAYA</title>
+  </head>
+  <body id="home"> 
+    <button onclick="topFunction()" id="scrollTop" title="Go to top">
+      <img src="/down-arrow.png" alt="">
+    </button>
+    <header  class="header">
+      <img src="/bgimg.jpg" alt="background image" class="bgimg" />
+      <nav class="nav">
+        <img class="logo" src="/logo.png" alt="logo" />
+        <div class="blur-container sticky_nav">
+          <ul class="nav_links">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About</a>
+            </li>
+            <li class="nav_item">
+              <a href="#project" class="nav_link">Our work</a>
+            </li>
+            <li class="nav_item">
+              <a href="#footer" class="nav_link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="intro">
+        <div class="title-container">
+          <h1 class="main-title"><span>NAYA</span> Community Network</h1>
+          <p class="sub-title">
+            Aims to connect the youth to the opportunities by applied training
+            programs for youth empowerment, and executing social projects with
+            the NGOs around world.
+            <br>
+            <a href="#about" class="btn_down">Learn more ↓</a>
+          </p>
+        </div>
+      </div>
+      <!-- Scrolldown arrows -->
+      <a id="arrows" href="#about">
+        <div class="arrows">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </header>
+
+    <!-- About Section -->
+    <main>
+      <section id="about" class="about">
+        <div class="about_header">
+          <h1 class="about_title">Who We Are</h1>
+          <p class="about_header_content">
+            NAYA is a non governmental, non profit youth platform that
+            passionately started social work in 2007 between active youth
+            volunteers from arab countries and several international
+            organizations. It was officially registered in 2015
+          </p>
+        </div>
+        <div class="bottom_line"></div>
+        <div class="container">
+          <div class="about_card">
+            <img src="/calendar.png" class="icon" alt="Message icon" />
+            <h3 class="about_card_title">Message</h3>
+            <p class="about_card_content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              doloribus maxime veritatis rem, autem, magni ratione cum dolorum
+              ullam et, reprehenderit distinctio! Quam magnam maxime minus quia
+              sequi modi facere.
+            </p>
+          </div>
+          <div class="break_line"></div>
+          <div class="about_card">
+            <img src="/binoculars.png" class="icon" alt="" />
+            <h3 class="about_card_title">vision</h3>
+            <p class="about_card_content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              doloribus maxime veritatis rem, autem, magni ratione cum dolorum
+              ullam et, reprehenderit distinctio! Quam magnam maxime minus quia
+              sequi modi facere.
+            </p>
+          </div>
+          <div class="break_line"></div>
+          <div class="about_card">
+            <img src="/sticky-note.png" class="icon" alt="" />
+            <h3 class="about_card_title">Activities</h3>
+            <p class="about_card_content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              doloribus maxime veritatis rem, autem, magni ratione cum dolorum
+              ullam et, reprehenderit distinctio! Quam magnam maxime minus quia
+              sequi modi facere.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="our_project">
+        <div class="project_header">
+          <h1 class="project_title">Our Lateset Projects</h1>
+        </div>
+
+        <div class="slideshow_container">
+          <div data-set="1" class="my_slides fade">
+            <img src="/img1.jpg" />
+            <p class="slideshow_content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              adipisci eveniet libero ad impedit provident ullam dolorum et
+              reiciendis, cum velit labore,
+            </p>
+            <div style="display: none;">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Commodi consectetur nemo laborum voluptatem id inventore fugiat! 
+                Architecto molestiae nemo, voluptas sapiente consequatur exercitationem, 
+                veniam debitis, ipsa atque ducimus ab alias!
+              </p>
+            </div>
+          </div>
+
+          <div data-set="2" class="my_slides fade">
+            <img src="/img2.jpg" />
+            <p class="slideshow_content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              adipisci eveniet libero ad impedit provident ullam dolorum et
+              reiciendis, cum velit labore,
+            </p>
+          </div>
+
+          <div data-set="3" class="my_slides fade">
+            <img src="/img3.jpg" />
+            <p class="slideshow_content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              adipisci eveniet libero ad impedit provident ullam dolorum et
+              reiciendis, cum velit labore,
+            </p>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="prev second" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="next second" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <section class="naya_numbers">
+        <div class="numbers_header">
+          <h1>NAYA In Numbers</h1>
+          <p>During an awesome 10 years, we're proud that we've got so far</p>
+        </div>
+        <div class="bottom_line"></div>
+        <div class="numbers_container">
+          <div class="numbers_card">
+            <img src="/group.png" alt="" />
+            <div id="value1">300</div>
+            <h4>Youth Initiatives</h4>
+          </div>
+          <div class="numbers_card">
+            <img src="/creativity.png" alt="" />
+            <div id="value2">300</div>
+            <h4>People Joined</h4>
+          </div>
+          <div class="numbers_card">
+            <img src="/presentation.png" alt="" />
+            <div id="value3">300</div>
+            <h4>Project Done</h4>
+          </div>
+          <div class="numbers_card">
+            <img src="/project-management.png" alt="" />
+            <div id="value4">300</div>
+            <h4>Training Hours</h4>
+          </div>
+        </div>
+        <p class="clarification">*for period 2007 - 2021</p>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer_container">
+        <div class="details">
+          <h4>Get In Touch</h4>
+          <div class="detail">
+            <img src="/call.png" alt="" />
+            <a href="tel:+62896706255135">+62-896-7062-55135</a>
+          </div>
+          <div class="detail">
+            <img src="/mail.png" alt="" />
+            <a target="_blank" href="mailto: ahmadbader245@gmail.com">info@nayajo.org</a>
+          </div>
+          <div class="detail">
+            <img src="/facebook.png" alt="" />
+            <a target="_blank" href="https://www.facebook.com/nayajo.org">@nayajo.org</a>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <img src="/logo.png" class="logo_footer" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Project Title<br/>
+      </h2>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
