@@ -271,6 +271,7 @@ h1,
   background: -webkit-radial-gradient(bottom, #1671B8, #2E8AC9);
   background: -moz-radial-gradient(bottom, #1671B8, #2E8AC9);
   background: radial-gradient(to top, #1671B8, #2E8AC9);  height: 90vh; */
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   padding-top: 15px; /* to fix the over scroll problem */
@@ -285,9 +286,14 @@ h1,
   /* margin-bottom: 50px; */
 }
 .slideshow_container{
+  width: 70%;;
+  margin: auto;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
 }
 .my_slides > img{
-  width: 660px;
+  width: 760px;
   height: 460px;
 }
 .my_slides{
@@ -296,7 +302,7 @@ h1,
 }
 .slideshow_content{
   text-align: center;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
