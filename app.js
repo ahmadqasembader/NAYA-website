@@ -11,7 +11,7 @@ const scrollTopBtn = document.querySelector("#scrollTop");
 const slides = document.querySelectorAll(".my_slides");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const arrows = document.getElementById('#arrows');
+const arrows = document.querySelectorAll('.arrows');
 
 const handleHover = function (e) {
   if (e.target.classList.contains("nav_link")) {
@@ -26,7 +26,6 @@ const handleHover = function (e) {
     siblings.forEach((element) => {
       if (element !== link) element.style.opacity = this;
     });
-    logo.style.opacity = this;
   }
 };
 
@@ -195,8 +194,9 @@ document.addEventListener("keydown", function (e) {
 const scrollTo = (e) => {
     e.preventDefault();
     if(e.target.classList.contains('nav_link')){
-        const id = e.target.getAttribute('href');
-        document.querySelector(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const id = e.target.getAttribute('href');
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 }
 navLinks.addEventListener('click', scrollTo);
+
