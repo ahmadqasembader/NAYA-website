@@ -2,7 +2,7 @@
 const navEl = document.querySelector(".nav_links");
 const logo = document.querySelector(".logo");
 const header = document.querySelector(".header");
-const navbar = document.querySelector(".sticky");
+const navbar = document.querySelector('.sticky');
 const links = document.querySelectorAll(".nav_link");
 const navLinks = document.querySelector(".nav_links");
 const numbers = document.querySelector(".numbers_container");
@@ -84,7 +84,7 @@ const el = document.querySelector("#value1");
 const elCoords = el.getBoundingClientRect();
 
 function InitivtiveDone() {
-  count1++;
+  if(count1 < 213) count1++;
   document.querySelector("#value1").innerHTML = count1;
   if (count1 >= 213) {
     clearInterval(initiative);
@@ -92,7 +92,7 @@ function InitivtiveDone() {
 }
 
 function peopleJoined() {
-  count2 += 50;
+  if(count2 < 26500) count2+= 50;
   document.querySelector("#value2").innerHTML = count2;
   if (count2 >= 26500) {
     clearInterval(people);
@@ -100,7 +100,7 @@ function peopleJoined() {
 }
 
 function ProjectDone() {
-  count3++;
+  if(count3 < 48) count3++;
   document.querySelector("#value3").innerHTML = count3;
   if (count3 >= 48) {
     clearInterval(project);
@@ -108,7 +108,7 @@ function ProjectDone() {
 }
 
 function trainingHours() {
-  count4 += 25;
+  if(count4 < 9700) count4+= 25;
   document.querySelector("#value4").innerHTML = count4;
   if (count4 >= 9700) {
     clearInterval(trainHours);
@@ -168,7 +168,7 @@ const scrollTo = (e) => {
     const id = e.target.getAttribute("href");
     document
       .querySelector(id)
-      .scrollIntoView({ behavior: "smooth", block: "nearest" });
+      .scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
 navLinks.addEventListener("click", scrollTo);
